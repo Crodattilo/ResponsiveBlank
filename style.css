@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	height: 100%;
+    padding: 0;
+	font-family: "montserrat", sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100%;
+    background-color: #ced6e0
+}
+
+.header{
+	height: 100px;
+	background: #11204f;
+	padding: 0 20px;
+	color: #fff;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+	z-index:10;
+}
+
+.logo{
+	line-height: 130px;
+	float: left;
+	text-transform: uppercase;
+}
+
+.menu{
+	float: right;
+	line-height: 100px;
+    padding: 0 20px;
+}
+
+.menu a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.5s;
+}
+
+.menu a:hover{
+	color: #3498db;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu a{
+    visibility: hidden;
+  }
+}
+
+.title{
+	color: #2d3436;
+    text-align: center;
+    text-shadow: 3px 2px #b2bec3;
+    font-size: 50px;
+    font-weight: bold;
+    height: 10%;
+}
+
+.content{
+	color: #2d3436;
+    text-align: center;
+    text-shadow: 2px 1px #b2bec3;
+    font-size: 25px;
+    font-weight: lighter;
+    height: 10%;
+}
+
+hr {
+	width: 95%;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#666;
+	border: 0 none;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #11204f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.space{
+	height: 100px;
+}
+
+.gotop{
+	position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #11204f;
+    bottom: 25px;
+    right: 25px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.dark{
+	margin: auto;
+	padding: 20px;
+	background: #000;
+    color: #fff;
+    width: 85%;
+    height: auto;
+}
+
+.contact {
+    border: none;
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.contactbutton {
+    background-color: black; 
+    border: 0px;
+}
+
+.contactbutton:hover {
+    color: white;
+    height: 55px;
+    width: 55px;
+}
+
+.leaf{
+    height: auto;
+	margin: auto;
+    padding: 20px;
+	background: #fff;
+	border-radius: 25px;
+	border: 1px solid #dfe4ea;
+	width: 85%;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.img-container{
+	background-image: url(imgs/hero.png);
+	height: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+    z-index:1;
+}
+
+.inner-container{
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	height: auto;
+	margin-top: 200px;
+}
+
+h1{
+	font-size: 7em;
+	font-family: "Shadows into Light", Sans Serif;
+}
+
+h2{
+	margin-top: -17px;
+	font-family: "Source Sans Pro", Sans Serif;
+	font-size: 1.7em;
+	text-align: center;
+	font-weight:400;
+}
+
+a{
+    color: #f5f6fa;
+	margin-top: 20px;
+	font-size: 1.3em;
+	font-family: "Source Sans Pro", Sans Serif;
+}
+
+.btn{
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	padding: 10px;
+	color: #fff;
+	border: 4px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn:hover,.btn:active{
+	background-color: #fff;
+	color: #000;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+@media only screen and (max-width: 920px){
+	.inner-container{
+		margin-top: 100 px;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.inner-container{
+		margin-top: 150px;
+	}
+	h1{
+		font-size: 5em;
+	}
+	h2{
+		font-size: 1.4em;
+	}
